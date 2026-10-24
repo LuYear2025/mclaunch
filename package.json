@@ -1,0 +1,35 @@
+{
+  "name": "mclaunch",
+  "version": "0.1.0",
+  "description": "MC Launcher in your browser - npx mclaunch",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "minecraft",
+    "launcher",
+    "modrinth",
+    "curseforge",
+    "fabric",
+    "forge",
+    "neoforge"
+  ],
+  "author": "LuYear2025",
+  "bin": {
+    "mclaunch": "bin/mclaunch.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node bin/mclaunch.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "public",
+    "README.md"
+  ],
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MC Launch</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="dot"></span>MC Launch</div>
+    <nav class="tabs">
+      <button class="tab active" data-tab="home">主页</button>
+      <button class="tab" data-tab="instances">实例</button>
+      <button class="tab" data-tab="download">下载</button>
+      <button class="tab" data-tab="multiplayer">联机</button>
+      <button class="tab" data-tab="accounts">账号</button>
+      <button class="tab" data-tab="settings">设置</button>
+    </nav>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <span>我的实例</span>
+        <button id="newInstance" class="ghost" title="新建实例">＋</button>
+      </div>
+      <ul id="instanceList" class="instance-list"></ul>
+    </aside>
+
+    <section id="panel" class="panel"></section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <template id="jobTemplate">
+    <div class="job">
+      <div class="job-head"><span class="job-title"></span><span class="job-pct"></span></div>
+      <div class="bar"><div class="bar-fill"></div></div>
+      <div class="job-detail"></div>
+    </div>
+  </template>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
