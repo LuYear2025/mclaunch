@@ -1,11 +1,11 @@
 # MC Launch
 
-网页形式的 Minecraft 启动器。`npx mclaunch` 起一个本地服务，浏览器里管理账号、下载游戏、装整合包。
+网页形式的 Minecraft 启动器。一条 npx 命令起本地服务，浏览器里管账号、下载游戏、装整合包、启动、联机。
 
 ## 运行
 
 ```bash
-npx mclaunch
+npx github:LuYear2025/mclaunch
 ```
 
 默认监听 `127.0.0.1:27140` 并自动打开浏览器。可选参数：
@@ -13,6 +13,15 @@ npx mclaunch
 - `--port 27140` 指定端口
 - `--no-open` 不自动开浏览器
 - 环境变量 `MCLAUNCH_HOME` 换数据目录（默认 `%USERPROFILE%\.mclaunch`）
+
+也可以本地跑：
+
+```bash
+git clone https://github.com/LuYear2025/mclaunch
+cd mclaunch
+npm install
+node bin/mclaunch.js
+```
 
 ## 现在能做什么
 
